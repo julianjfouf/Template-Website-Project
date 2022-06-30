@@ -494,7 +494,6 @@ PRICING
 }
 
 .pricing__plan {
-  padding: 8px 32px 0;
   margin: 64px 32px 0 0;
 }
 
@@ -503,6 +502,7 @@ PRICING
   font-weight: 900;
   font-size: 48px;
   margin-bottom: 16px;
+  letter-spacing: 0.025em;
 }
 
 .pricing__description {
@@ -520,17 +520,26 @@ PRICING
   font-weight: 700;
 }
 
-
+.pricing__plans {
+  display: flex;
+  justify-content: space-between;
+}
 
 .pricing__plan {
-  border: 0.5px solid lightgray;
+  position: relative;
+  border: 0.1px solid #e5e7eb;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   width: calc(100% / 3);
+  border-radius: 0.5rem;
+  max-width: 24rem;
 }
 
 .pricing__plan--wrapper {
   display: flex;
   flex-direction: column;
   padding: 32px 0;
+  padding-top: 40px;
   width: 100%;
 }
 
@@ -539,9 +548,8 @@ PRICING
   flex-direction: column;
   padding: 32px;
   text-align: center;
-  border-top: 2px solid lightgray;
-  border-bottom: 2px solid lightgray;
- 
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .title {
@@ -563,6 +571,7 @@ PRICING
   font-size: 20px;
   line-height: 1.625;
   text-align: center;
+  letter-spacing: 0;
 }
 
 .duration {
@@ -581,6 +590,7 @@ PRICING
   font-weight: 700;
   line-height: 1.625;
   text-align: center;
+  letter-spacing: 0;
 }
 
 .feature1button {
@@ -588,14 +598,183 @@ PRICING
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 16px 64px;
+  padding: 16px 60px;
   margin: 0 auto;
-  color: #F7FAFC;
+  color: #f7fafc;
   font-size: 14px;
-  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+  font-weight: 700;
 }
 
+.pricing__plan--blue {
+  background-image: linear-gradient(
+    135deg,
+    rgb(76, 81, 191) 0%,
+    rgb(102, 126, 234) 100%
+  );
+}
+
+.name--blue,
+.title--blue,
+.price--blue {
+  color: #f7fafc;
+}
+
+.duration--blue {
+  color: #edf2f7;
+}
+
+.feature--blue {
+  color: #e2e8f0;
+}
 
 .feature1button--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 32px 64px;
+}
+
+.feature__button1 {
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+  color: #f7fafc;
+}
+.feature__button2 {
+  background-color: #f7fafc;
+  color: #6415ff;
+}
+
+.feature__button3 {
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+  color: #f7fafc;
+}
+
+.highlight {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 0.5rem;
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+}
+
+.highlight--blue {
+  opacity: 0;
+}
+
+.highlight--coral {
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
+}
+
+.container__pricing {
+  padding: 96px 24px;
+}
+
+/*
+
+TESTIMONIALS
+
+*/
+
+.container__testimonials {
+  padding: 96px 24px;
+}
+
+.row__testimonials {
+  display: flex;
+}
+
+.fivestars {
+  color: #fabf2a;
+}
+
+.testimonials__image {
+  width: 100%;
+}
+
+.testimonials__text {
+  width: 77.5%;
+  padding: 0 0 0 64px;
+}
+
+.testimonials__subtitle {
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.testimonials__title {
+  font-size: 48px;
+  color: #243e63;
+  font-weight: 900;
+}
+
+.testimonials__description {
+  margin: 24px 0 32px 0;
+  font-size: 18px;
+  color: #7c8ba1;
+  font-weight: 500;
+  line-height: 1.625;
+}
+
+.fivestars__title {
+  font-size: 20px;
+  color: #243e63;
+  font-weight: 700;
+  margin: 16px 0 0;
+  letter-spacing: normal;
+}
+
+.fivestars__description {
+  margin: 16px 0 40px;
+  font-size: 16px;
+  color: #4A5568;
+  line-height: 1.625;
+  font-weight: 500;
+  letter-spacing: normal;
+  width: 576px;
+}
+
+.profile__profile--wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pfp {
+  height: 80px;
+  width: 80px;
+  border-radius: 9999px;
+}
+
+.profile--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile__name {
+  margin-left: 18px;
+}
+
+.profile__title {
+  margin-left: 18px;
 }
