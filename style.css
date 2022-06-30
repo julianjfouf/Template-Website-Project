@@ -709,6 +709,7 @@ TESTIMONIALS
 
 .testimonials__image {
   width: 100%;
+  padding: 108px 0;
 }
 
 .testimonials__text {
@@ -746,7 +747,7 @@ TESTIMONIALS
 .fivestars__description {
   margin: 16px 0 40px;
   font-size: 16px;
-  color: #4A5568;
+  color: #4a5568;
   line-height: 1.625;
   font-weight: 500;
   letter-spacing: normal;
@@ -772,9 +773,98 @@ TESTIMONIALS
 }
 
 .profile__name {
-  margin-left: 18px;
+  margin-left: 24px;
 }
 
 .profile__title {
-  margin-left: 18px;
+  margin-left: 24px;
+}
+
+.profile__name {
+  font-size: 20px;
+  color: #243e63;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.profile__title {
+  font-size: 16px;
+  color: #7c8ba1;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.fa-arrow-left {
+  color: #6415ff;
+  padding: 16px;
+  margin: 0px 12px;
+  background-color: #edf2f7;
+  border: none;
+  border-radius: 9999px;
+}
+
+.fa-arrow-right {
+  color: #6415ff;
+  padding: 16px;
+  margin: 0px 12px;
+  background-color: #edf2f7;
+  border: none;
+  border-radius: 9999px;
+}
+
+/*
+
+FINAL NOTE
+
+*/
+
+.container__note {
+  padding: 96px 0;
+}
+
+.note__text--wrapper {
+  background-color: #6415ff;
+  width: 1280px;
+  height: 282px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.note__text--wrapper1 {
+  margin: 0px 128px;
+  padding: 0px 32px;
+  display: flex;
+  align-items: center;
+}
+
+.note__text {
+  font-size: 30px;
+  color: #f7fafc;
+  font-weight: 700;
+  letter-spacing: normal;
+  width: 480px;
+}
+
+.note__button1 {
+  background-color: #f56565;
+  color: #f7fafc;
+  font-size: 16px;
+  margin-right:32px;
+  padding: 20px 40px;
+  margin-left: 96px;
+  max-height: 66px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.note__button2 {
+  font-size: 16px;
+  color: #f7fafc;
+  padding: 20px 40px;
+  border: 1px solid #f7fafc;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  max-height: 66px;
 }
