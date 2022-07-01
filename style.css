@@ -223,6 +223,7 @@ FEATURES
   font-size: 16px;
   font-weight: 700;
   margin: 0 0 16px;
+  line-height: 0.75;
 }
 
 .title__features {
@@ -421,8 +422,9 @@ VALUES
 
 .values__title {
   font-weight: 900;
-  color: #243e63;
+  color: rgba(36,62,99);
   font-size: 48px;
+  line-height: 1.25;
 }
 
 .values__description {
@@ -480,6 +482,10 @@ VALUES
 
 .values__btn {
   margin: 48px 0 0;
+  font-size: 14px;
+  letter-spacing: normal;
+  font-weight: 700;
+  color: rgba(247,250,252);
 }
 
 /*
@@ -552,6 +558,11 @@ PRICING
   border-bottom: 1px solid #e5e7eb;
 }
 
+.features--wrapper--blue {
+  border-top: 2px solid rgba(102,126,234);
+  border-bottom: 2px solid rgba(102,126,234);
+}
+
 .title {
   color: #1a202c;
   font-size: 20px;
@@ -564,6 +575,7 @@ PRICING
   margin: 20px 0 0;
   font-weight: 500;
   text-align: center;
+  letter-spacing: normal;
 }
 
 .name {
@@ -720,12 +732,14 @@ TESTIMONIALS
 .testimonials__subtitle {
   letter-spacing: 0.1em;
   font-weight: 700;
+  line-height: 0.75;
 }
 
 .testimonials__title {
   font-size: 48px;
   color: #243e63;
   font-weight: 900;
+  line-height: 1.25;
 }
 
 .testimonials__description {
@@ -819,7 +833,8 @@ FINAL NOTE
 */
 
 .container__note {
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-bottom: 192px;
 }
 
 .note__text--wrapper {
@@ -851,7 +866,7 @@ FINAL NOTE
   background-color: #f56565;
   color: #f7fafc;
   font-size: 16px;
-  margin-right:32px;
+  margin-right: 32px;
   padding: 20px 40px;
   margin-left: 96px;
   max-height: 66px;
@@ -863,8 +878,96 @@ FINAL NOTE
   font-size: 16px;
   color: #f7fafc;
   padding: 20px 40px;
-  border: 1px solid #f7fafc;
+  border: 1px solid;
+  border-color: rgba(160,174,192);
   font-weight: 700;
   letter-spacing: 0.025em;
   max-height: 66px;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #6415ff;
+}
+
+.footer__text--wrapper1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 64px;
+  border-bottom: 2px solid;
+  border-color: rgba(116, 44, 255);
+}
+
+.footer__text--wrapper {
+  margin: 60px 0 0;
+}
+
+.footer__link-title {
+  color: #f7fafc;
+  letter-spacing: normal;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 0;
+}
+
+.footer__link-name {
+  color: #f7fafc;
+  font-weight: 500;
+  letter-spacing: normal;
+  margin: 12px 0 0;
+  font-size: 14px;
+}
+
+.footer__bottom--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 0px 72px 0px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer__img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer__logo-title {
+  margin: 0 0 0 8px;
+  font-size: 20px;
+  color: #f7fafc;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+}
+
+.fab {
+  padding: 8px;
+  background-color: #f7fafc;
+  border: none;
+  border-radius: 9999px;
+  font-size: 14px;
+}
+
+.fa-facebook-f {
+  margin-right: 14px;
+  padding: 8px 12px;
+}
+
+.fa-twitter {
+  margin-right: 14px;
+  padding: 8px;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  color: #c8d5e0;
+  font-weight: 500;
 }
