@@ -1104,3 +1104,58 @@ footer {
   color: #c8d5e0;
   font-weight: 500;
 }
+
+@media (max-width: 1024px) {
+
+  .container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 32p
+    x;
+  }
+
+  .section__header {
+    padding-left: 32px;
+  }
+
+  .landing__img {
+    padding-right: 32px;
+  }
+
+  .nav__link {
+    display: none;
+  }
+
+  .nav__btn {
+    display: none;
+  }
+
+  .header__login--btn {
+    padding: 10px 12px;
+    top: 12px;
+    right: -32px;
+  }
+
+  .features__image {
+    width: calc(100% / 2);
+  }
+
+  .quality__works--text {
+    padding-left: 32px;
+  }
+
+  .quality__work--image {
+    padding-right: 32px;
+    padding-top: 64px;
+  }
+
+  .values__text--wrapper {
+    padding-left: 32px;
+  }
+  
+  .values__img {
+    padding-right: 32px;
+    padding-top: 72px;
+  }
+}
