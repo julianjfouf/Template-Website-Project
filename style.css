@@ -35,6 +35,28 @@ p {
   margin-inline-end: 0px;
 }
 
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-1200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(1200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* 
 
 NAVIGATION BAR 
@@ -73,6 +95,11 @@ nav {
   padding: 0 0 4px;
   color: #243e63;
   top: 2px;
+  transition: all 300ms ease;
+}
+
+.nav__header--logo:hover .nav__logo--Treact {
+  color: #6415ff;
 }
 
 .nav__links {
@@ -88,6 +115,12 @@ nav {
   color: #243e63;
   font-weight: 600;
   font-size: 14px;
+  transition: text-decoration 300ms ease;
+}
+
+.nav__link:hover {
+  color: #6415ff;
+  text-decoration: underline 3px;
 }
 
 .nav__link--login {
@@ -103,6 +136,11 @@ nav {
   font-weight: 600;
   border-bottom-width: 0px;
   line-height: inherit;
+  transition: all 300ms ease;
+}
+
+.nav__btn:hover {
+  background-color: #4e0ecf;
 }
 
 /*
@@ -114,6 +152,7 @@ LANDING
 .header__container {
   padding: 116px 0;
   padding-bottom: 168px;
+  animation: slide-left 650ms ease;
 }
 
 .section__header {
@@ -173,6 +212,12 @@ LANDING
   padding: 20px 192px 20px 32px;
   border-radius: 9999px;
   border: 2px solid lightgray;
+  transition: all 300ms ease;
+}
+
+.header__email:hover {
+  border: 2px solid gray;
+  cursor: text;
 }
 
 .header__login--btn {
@@ -180,6 +225,11 @@ LANDING
   left: 280px;
   top: 10px;
   font-size: 16px;
+  transition: all 300ms ease;
+}
+
+.header__login--btn:hover {
+  background-color: #4e0ecf;
 }
 
 .sponsors {
@@ -212,6 +262,10 @@ FEATURES
 
 .features {
   padding: 52px 0;
+}
+
+.container__features {
+  animation: slide-right 650ms ease;
 }
 
 .features__title {
@@ -321,6 +375,14 @@ QualityWorks
 .qualityworks__subtitle {
   line-height: 1.5;
   font-weight: 700;
+}
+
+.qualitywork__btn {
+  transition: all 300ms ease;
+}
+
+.qualitywork__btn:hover {
+  background-color: #4e0ecf;
 }
 
 /*
@@ -487,6 +549,11 @@ VALUES
   letter-spacing: normal;
   font-weight: 700;
   color: rgba(247, 250, 252);
+  transition: all 300ms ease;
+}
+
+.values__btn:hover {
+  background-color: #4e0ecf;
 }
 
 /*
@@ -656,10 +723,30 @@ PRICING
     rgb(129, 230, 217) 100%
   );
   color: #f7fafc;
+  transition: all 300ms ease;
 }
+
+.feature__button1:hover {
+  transform: translate(2px, -2px);
+  --tw-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .feature__button2 {
   background-color: #f7fafc;
   color: #6415ff;
+  transition: all 300ms ease;
+}
+
+.feature__button2:hover {
+  background-color: #ebebeb;
+  transform: translate(2px, -2px);
+  --tw-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .feature__button3 {
@@ -669,6 +756,15 @@ PRICING
     rgb(254, 178, 178) 100%
   );
   color: #f7fafc;
+  transition: all 300ms ease;
+}
+
+.feature__button3:hover {
+  transform: translate(2px, -2px);
+  --tw-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .highlight {
