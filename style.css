@@ -9,6 +9,127 @@
   line-height: 1.5;
 }
 
+html {
+  overflow-x: hidden;
+}
+
+.blob1 {
+  position: absolute;
+  left: 32px;
+  bottom: -92px;
+  opacity: 0.05;
+  transform: translateX(calc(-200% / 3));
+  height: 256px;
+  width: 256px;
+}
+
+.blob2 {
+  position: absolute;
+  right: 32px;
+  bottom: -932px;
+  opacity: 0.25;
+  width: 256px;
+  height: 600px;
+  transform: matrix(1, 0, 0, 1, 128, 192);
+}
+
+.blob3 {
+  position: absolute;
+  left: 122px;
+  bottom: -4068px;
+  height: 256px;
+  width: 256px;
+  transform: matrix(1, 0, 0, 1, -128, 128);
+  opacity: 0.25;
+  overflow: hidden;
+}
+
+.blob4 {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  color: rgb(80, 17, 204);
+  z-index: 0;
+  left: 200px;
+  bottom: -5220px;
+  transform: matrix(1, 0, 0, 1, -80, 128);
+  opacity: 0.5;
+}
+
+.container__note {
+  background-color: white;
+  z-index: 0;
+}
+
+.note__button2 {
+  z-index: 100;
+}
+
+.blob5 {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  color: rgb(80, 17, 204);
+  right: 120px;
+  bottom: -5224px;
+  opacity: 0.5;
+}
+
+.blob6 {
+  position: absolute;
+  height: 320px;
+  width: 320px;
+  color: rgb(80, 17, 204);
+  opacity: 0.5;
+  bottom: -5980px;
+  left: 0;
+  transform: matrix(1, 0, 0, 1, -80, -128);
+}
+
+.footer__text--wrapper {
+  z-index: 2;
+}
+
+.blob7 {
+  position: absolute;
+  height: 320px;
+  width: 320px;
+  color: rgb(80, 17, 204);
+  opacity: 0.5;
+  right: 120px;
+  bottom: -5869px;
+  transform: matrix(1, 0, 0, 1, 128, 192);
+}
+
+.footer__links {
+  z-index: 2;
+}
+
+.grid1 {
+  position: absolute;
+  right: 120px;
+  bottom: -1476px;
+  color: rgb(100, 21, 255);
+  fill: rgb(100, 21, 255);
+  width: 80px;
+  height: 80px;
+  transform: matrix(1, 0, 0, 1, 40, 40);
+  z-index: -1000;
+}
+
+.grid2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  z-index: -1;
+  left: 400px;
+  bottom: -2150px;
+  color: rgb(100, 21, 255);
+  fill: rgb(100, 21, 255);
+  opacity: 0.15;
+  transform: matrix(1, 0, 0, 1, -40, 40);
+}
+
 .row {
   width: 100%;
   max-width: 1280px;
@@ -821,6 +942,11 @@ PRICING
   padding: 32px 64px;
 }
 
+.feature1button--wrapper1 {
+  z-index: 100;
+  background-color: white;
+}
+
 .feature__button1 {
   background: linear-gradient(
     115deg,
@@ -1210,6 +1336,10 @@ footer {
 }
 
 @media (max-width: 1024px) {
+  .blob1, .blob2, .blob3, .blob4, .blob5, .blob6, .blob7, .grid1, .grid2 {
+    display: none;
+  }
+
   .container {
     display: flex;
     justify-content: center;
