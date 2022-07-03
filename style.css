@@ -1336,7 +1336,15 @@ footer {
 }
 
 @media (max-width: 1024px) {
-  .blob1, .blob2, .blob3, .blob4, .blob5, .blob6, .blob7, .grid1, .grid2 {
+  .blob1,
+  .blob2,
+  .blob3,
+  .blob4,
+  .blob5,
+  .blob6,
+  .blob7,
+  .grid1,
+  .grid2 {
     display: none;
   }
 
